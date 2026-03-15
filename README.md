@@ -1,16 +1,31 @@
-# React + Vite
+LuxeFurnish | Immersive Interior E-Commerce
+A premium, spatial-navigation e-commerce platform built with React, Tailwind CSS, and Framer Motion. LuxeFurnish moves away from traditional grid-only shopping to an interactive "Virtual Tour" experience where users explore curated rooms to discover products.
+✨ Key Features
+Spatial Room Navigation: A seamless horizontal-scroll experience allowing users to move between the Garden, Living Room, Kitchen, and Bedroom.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive Hotspots: Visual product anchors within each room that reveal pricing and details on hover.
 
-Currently, two official plugins are available:
+Global Cart System: Integrated React Context API to manage a persistent shopping bag across all virtual environments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dynamic Product Discovery: A "Shop All" grid with advanced filtering logic and real-time state updates.
 
-## React Compiler
+Responsive Motion UI: Mobile-optimized layouts featuring fluid slide-out drawers and full-screen overlay menus powered by Framer Motion
+Technical Stack
+Frontend: React.js (Vite)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Styling: Tailwind CSS
 
-## Expanding the ESLint configuration
+Animations: Framer Motion & AnimatePresence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+State Management: React Context API
+
+Routing: React Router Dom
+
+Deployment: Vercel
+📂 Project Structure
+src/
+├── assets/          # High-resolution interior imagery
+├── components/      # Reusable UI (Navbar, CartDrawer, Hotspots)
+├── context/         # CartContext for global state management
+├── pages/           # Room views (Garden, Kitchen, etc.) and ShopAll
+└── App.jsx          # Root component with Route configuration
