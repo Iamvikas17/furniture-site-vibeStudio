@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  background-color: black;
+} */
+ 
+/* Global resets specifically for the app structure */
+/* html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+} */
+
+/* Scrollbar hide logic */
+/* .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  /* 100% height aur overflow: hidden ko yahan se hata diya hai */
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* Jab humein scroll lock karna ho (Rooms mein), tab ye class kaam aayegi */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Scrollbar hide logic */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
